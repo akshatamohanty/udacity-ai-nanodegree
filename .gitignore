@@ -9,4 +9,7 @@ saved_models/weights.best.Resnet50.hdf5
 bottleneck_features/DogVGG16Data.npz
 bottleneck_features/DogResnet50Data.npz
 __pycache__
+DogVGG16Data.npz
+dogImages.zip
+lfw.zip
 
