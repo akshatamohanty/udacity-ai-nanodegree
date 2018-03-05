@@ -15935,9 +15935,10 @@ Epoch 20/20
 <p>Answer 6: The output is better than I expected! It recognized the 5 out of 6 images correctly, identifying all the correct dog species for the dog pictures. It was not able to identify one of the humans - probably because of the bearded face.</p>
 <p>Three possible points for improvement of the algorithm could be -</p>
 <ul>
-<li>My dog or human algorithm could be refactored to get the probability of it being a dog or human and assign isDog or isHuman based on that in the scenario that both the dog and human detectors return true values</li>
-<li>The human detection algorithm could be trained and improved further as it is clear that it could not detected the bearded man as a human</li>
-<li></li>
+<li>The human detection algorithm could be trained and improved further as it is clear that it could not detected the bearded man as a human. I found this great article (<a href="https://www.learnopencv.com/training-better-haar-lbp-cascade-eye-detector-opencv/">https://www.learnopencv.com/training-better-haar-lbp-cascade-eye-detector-opencv/</a>) which used a technique called hard negative mining for the human pictures to improve performance of lbp/haarcascades to significantly increase the performance</li>
+<li>I could try augmenting the dataset using techniques like translation, scaling, flipping, rotation etc to make the models perform better</li>
+<li>I could try using more drop out layers to the Resnet50 model to prevent overfitting</li>
+<li>The predict_breed can be refactored to consider check if a particular breed is clearly indicated (prod &gt; 75%) or a mixed breed dog is indicated and return an appropriate breed.</li>
 </ul>
 
 </div>
