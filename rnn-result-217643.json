@@ -1,0 +1,60 @@
+{
+    "critiques": {
+        "806": {
+            "rubric_items": {
+                "6511": {
+                    "observation": "```\nNot all of the tests passed.\n\n\n************************************************************************\n                         Test Failure Feedback                          \n************************************************************************\n\nFailed Test: Step 2: Create a simple RNN model for regression\n----------------------------------------------------------------------\nTypeError: build_part1_RNN() missing 1 required positional argument: 'b_inp_shape'\n\n\n************************************************************************\n                          Test Result Summary                           \n************************************************************************\n\nStep 2: Create a simple RNN model for regression                       E\n\n\n```",
+                    "result": "failed"
+                },
+                "6512": {
+                    "observation": "```\nNot all of the tests passed.\n\n\n************************************************************************\n                         Test Failure Feedback                          \n************************************************************************\n\nFailed Test: Step 3: Clean up a large text corpus\n----------------------------------------------------------------------\nAssertionError: False is not true : < should not be included in the clean text\n\n\n************************************************************************\n                          Test Result Summary                           \n************************************************************************\n\nStep 3: Clean up a large text corpus                                   F\n\n\n```",
+                    "result": "failed"
+                },
+                "6510": {
+                    "observation": "Correct!",
+                    "result": "passed"
+                },
+                "6514": {
+                    "observation": "```\nNot all of the tests passed.\n\n\n************************************************************************\n                         Test Failure Feedback                          \n************************************************************************\n\nFailed Test: Step 5: Create an RNN to perform multiclass classification\n----------------------------------------------------------------------\nAssertionError: 'Dense' != 'Activation'\n- Dense\n+ Activation\n : If using three layers, the third should be an Activation layer.\n\n\n************************************************************************\n                          Test Result Summary                           \n************************************************************************\n\nStep 5: Create an RNN to perform multiclass classification             F\n\n\n```",
+                    "result": "failed"
+                },
+                "6513": {
+                    "observation": "Correct!",
+                    "result": "passed"
+                }
+            }
+        }
+    },
+    "tests": [
+        {
+            "traceback": "TypeError: build_part1_RNN() missing 1 required positional argument: 'b_inp_shape'\n",
+            "rubric_item_id": "6511",
+            "description": "Step 2: Create a simple RNN model for regression",
+            "result": "E"
+        },
+        {
+            "traceback": "AssertionError: 'Dense' != 'Activation'\n- Dense\n+ Activation\n : If using three layers, the third should be an Activation layer.\n",
+            "rubric_item_id": "6514",
+            "description": "Step 5: Create an RNN to perform multiclass classification",
+            "result": "F"
+        },
+        {
+            "traceback": "AssertionError: False is not true : < should not be included in the clean text\n",
+            "rubric_item_id": "6512",
+            "description": "Step 3: Clean up a large text corpus",
+            "result": "F"
+        },
+        {
+            "traceback": "",
+            "rubric_item_id": "6510",
+            "description": "Step 1: Implement a function to window time series",
+            "result": "."
+        },
+        {
+            "traceback": "",
+            "rubric_item_id": "6513",
+            "description": "Step 4: Implement a function to window a large text corpus",
+            "result": "."
+        }
+    ]
+}
