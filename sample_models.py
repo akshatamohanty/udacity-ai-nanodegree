@@ -149,7 +149,7 @@ def deep_rnn_with_dropout(input_dim=161, units=200, recur_layers=2, output_dim=2
     print(model.summary())
     return model
 
-def final_model(input_dim=161, units=200, recur_layers=2, output_dim=29):
+def final_model(input_dim=161, units=200, recur_layers=3, output_dim=29):
     """ Build a deep network for speech 
     """
     # Main acoustic input
