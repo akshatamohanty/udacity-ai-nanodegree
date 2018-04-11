@@ -1,0 +1,60 @@
+{
+    "critiques": {
+        "806": {
+            "rubric_items": {
+                "6510": {
+                    "observation": "Correct!",
+                    "result": "passed"
+                },
+                "6512": {
+                    "observation": "```\nNot all of the tests passed.\n\n\n************************************************************************\n                         Test Failure Feedback                          \n************************************************************************\n\nFailed Test: Step 3: Clean up a large text corpus\n----------------------------------------------------------------------\nAssertionError: False is not true : 3 should not be included in the clean text\n\n\n************************************************************************\n                          Test Result Summary                           \n************************************************************************\n\nStep 3: Clean up a large text corpus                                   F\n\n\n```",
+                    "result": "failed"
+                },
+                "6511": {
+                    "observation": "```\nNot all of the tests passed.\n\n\n************************************************************************\n                         Test Failure Feedback                          \n************************************************************************\n\nFailed Test: Step 2: Create a simple RNN model for regression\n----------------------------------------------------------------------\nNameError: name 'X_train' is not defined\n\n\n************************************************************************\n                          Test Result Summary                           \n************************************************************************\n\nStep 2: Create a simple RNN model for regression                       E\n\n\n```",
+                    "result": "failed"
+                },
+                "6514": {
+                    "observation": "Correct!",
+                    "result": "passed"
+                },
+                "6513": {
+                    "observation": "Correct!",
+                    "result": "passed"
+                }
+            }
+        }
+    },
+    "tests": [
+        {
+            "traceback": "NameError: name 'X_train' is not defined\n",
+            "description": "Step 2: Create a simple RNN model for regression",
+            "rubric_item_id": "6511",
+            "result": "E"
+        },
+        {
+            "traceback": "AssertionError: False is not true : 3 should not be included in the clean text\n",
+            "description": "Step 3: Clean up a large text corpus",
+            "rubric_item_id": "6512",
+            "result": "F"
+        },
+        {
+            "traceback": "",
+            "description": "Step 5: Create an RNN to perform multiclass classification",
+            "rubric_item_id": "6514",
+            "result": "."
+        },
+        {
+            "traceback": "",
+            "description": "Step 1: Implement a function to window time series",
+            "rubric_item_id": "6510",
+            "result": "."
+        },
+        {
+            "traceback": "",
+            "description": "Step 4: Implement a function to window a large text corpus",
+            "rubric_item_id": "6513",
+            "result": "."
+        }
+    ]
+}
