@@ -1,2 +1,2 @@
-.html
-.css
+* linguist-vendored
+*.python linguist-vendored=false
