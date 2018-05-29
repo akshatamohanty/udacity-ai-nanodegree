@@ -1,6 +1,7 @@
 # Artificial Intelligence Nanodegree and Specializations
 Udacity is a for-profit educational organization founded by Sebastian Thrun, David Stavens, and Mike Sokolsky offering massive open online courses (MOOCs). This specialization was offered by Udacity as two three-month semester program, covering topics in Artificial Intelligence and Machine Learning, as well as a Specialization in either Computer Vision, Natural Langugae Processing or Voice User Interfaces. I completed the nanodegree by completing 7 required projects with a capstone project in Voice User Interfaces. This is a collection of all my work towards the degree. 
 
+Certificate [here](https://confirm.udacity.com/QEJPWSRW)
 
 ## Project Descriptions
 
