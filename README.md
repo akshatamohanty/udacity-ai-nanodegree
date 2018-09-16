@@ -54,5 +54,6 @@ The second part of the project processed text from a novel and created an RNN mo
 
 ## Voice User Interfaces: Speech Recognition [Capstone]
 This was the final capstone project for the nanodegree. The project was to build a deep neural network that functions as part of an end-to-end automatic speech recognition (ASR) pipeline!  Five models were explored using various layers and configurations like RNNs (GRU, LSTM), Bidirectional RNNs, CNN + RNNs, RNN + Time Distributed Dense, Dropout, Batch Normalization, etc. Students were also required to analyze and study the performance of each of the models and come up with a model of their own. 
+- [Demo](./project-07-vui-capstone/vui_notebook.html)
 - [IPython Notebook](https://github.com/akshatamohanty/udacity-ai-nanodegree/blob/master/project-02-isolation/game_agent.py)
 
