@@ -8,8 +8,9 @@
                     <ul>
                         <li class='item--problem' 
                             v-for="item in questions" 
+                            v-on:click="setActive(item.id)"
                             :key='item.id'
-                            :class="{ active: item.active }">
+                            :class="{ active: item.id == activeIndex }">
                             {{ item.title }}
                         </li>
                     </ul>
@@ -23,8 +24,8 @@
             <div class='board'>
                     <ul>
                         <li class='cell'
-                            v-for='cell in questions[0].cells'
-                            :key='cell'>
+                            v-for='(cell, key) in questions[activeIndex].cells'
+                            :key='key'>
                             <span class='cell-content'>{{ cell }}</span>
                         </li>
                     </ul>
@@ -38,11 +39,11 @@ export default {
     name: 'Sudoku',
     data: function() {
         return {
+            activeIndex: 0,
             questions: [
                 { 
-                    id: 1, 
+                    id: 0, 
                     title: 'Problem 1', 
-                    active: true, 
                     cells: {
                         A1: 2,
                         A2: undefined,
@@ -127,11 +128,101 @@ export default {
                         I9: 3,
                     }
                 }, 
-                { id: 2, title: 'Problem 2', active: false },
+                { 
+                    id: 1, 
+                    title: 'Problem 2',
+                    cells: {
+                        A1: undefined,
+                        A2: undefined,
+                        A3: undefined, 
+                        A4: undefined, 
+                        A5: undefined, 
+                        A6: 1,
+                        A7: undefined, 
+                        A8: undefined, 
+                        A9: undefined,
+                        B1: undefined,
+                        B2: undefined,
+                        B3: undefined, 
+                        B4: undefined, 
+                        B5: undefined, 
+                        B6: undefined,
+                        B7: undefined, 
+                        B8: undefined, 
+                        B9: undefined,
+                        C1: undefined,
+                        C2: undefined,
+                        C3: 9, 
+                        C4: undefined, 
+                        C5: undefined, 
+                        C6: undefined,
+                        C7: undefined, 
+                        C8: 1, 
+                        C9: undefined,
+                        D1: undefined,
+                        D2: undefined,
+                        D3: 6, 
+                        D4: undefined, 
+                        D5: undefined, 
+                        D6: 8,
+                        D7: undefined, 
+                        D8: undefined, 
+                        D9: undefined,
+                        E1: 3,
+                        E2: undefined,
+                        E3: undefined, 
+                        E4: undefined, 
+                        E5: 9, 
+                        E6: undefined,
+                        E7: undefined, 
+                        E8: undefined, 
+                        E9: 7,
+                        F1: undefined,
+                        F2: undefined,
+                        F3: undefined, 
+                        F4: 6, 
+                        F5: undefined, 
+                        F6: undefined,
+                        F7: 4, 
+                        F8: undefined, 
+                        F9: undefined,
+                        G1: undefined,
+                        G2: 4,
+                        G3: undefined, 
+                        G4: undefined, 
+                        G5: undefined, 
+                        G6: undefined,
+                        G7: 8, 
+                        G8: undefined, 
+                        G9: undefined,
+                        H1: undefined,
+                        H2: undefined,
+                        H3: 5, 
+                        H4: 2, 
+                        H5: undefined, 
+                        H6: undefined,
+                        H7: undefined, 
+                        H8: undefined, 
+                        H9: undefined,
+                        I1: undefined,
+                        I2: undefined,
+                        I3: undefined, 
+                        I4: undefined, 
+                        I5: undefined, 
+                        I6: undefined,
+                        I7: undefined, 
+                        I8: undefined, 
+                        I9: 3,
+                    }
+                },
             ]
         }
+    }, 
+    methods: {
+        setActive: function(idx) {
+            this.activeIndex = idx
+        }
     }
-   
 }
 </script>
 
