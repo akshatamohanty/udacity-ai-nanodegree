@@ -1,0 +1,14 @@
+{
+  "name": "dog-breed-classifier-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Akshata Mohanty",
+  "license": "MIT",
+  "dependencies": {
+    "@tensorflow/tfjs": "^1.0.4"
+  }
+}
